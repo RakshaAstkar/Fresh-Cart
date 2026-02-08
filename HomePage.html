@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 100%;
+            width: 100%;
+            background:#F9F9F9 ;
+            background-attachment: fixed;
+            position: relative;
+        }
+        .navbar{
+            height: 70px;
+            width: 100%;
+            background-color: #355E3B;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 250px;
+            position: sticky;
+        }
+        .menu ul{
+            display: flex;
+            align-items: center;
+            gap: 50px; 
+        }
+       .menu a{
+            text-decoration: none;
+            font-size: larger;
+            color: white;
+       }
+       .menu a:hover{
+            transform: scale(1.1);
+            color:#FFD95A;
+       }
+       footer{
+            height: 70px;
+            width: 100%;
+            background-color: #355E3B;
+            color: white;
+            display: flex;
+            align-items: center;
+            position: absolute;
+            justify-content: center;
+            top: 100%;
+       }
+       .container1{
+            height: 50px;
+            width: 100%;
+            background:linear-gradient(135deg,#E9F8E5,#FFFBEA);
+            color: #355E3B;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 60%;
+       }
+       .container1 .side{
+            display: flex;
+            gap: 50px;  
+       }
+
+       .container1 .tagline{
+        font-size: larger;
+            font-weight:600;
+       }
+       .container1 a{
+            text-decoration: none;
+            color: #355E3B;
+            font-size: large;
+            transform: scale(1.1);
+       }
+       .container2 a:hover{
+            transform: scale(1.1);
+            color:#FFD95A;
+       }
+       .container2{
+            height: 200px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: #ffffff;
+            color: #355E38;
+            gap: 20px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+       }
+       
+       .container2 a{
+            text-decoration: none;
+            background-color: #355E38 ;
+            color: white;
+            padding: 7px;
+            border-radius: 35px;
+            transform: scale(1.1);
+       }
+       .container3{
+            height: 350px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            background: rgb(208, 208, 208);
+            gap: 50px;
+       }
+
+       .container3 .card{
+        text-decoration: none;
+            background-color: white;
+            color: #355E38;
+            font-weight: 600;
+            border: 1px solid #B0B0B0;
+            border-radius: 15px;
+            padding: 5px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.09);
+            transition: 0.03s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 5px;
+       }
+
+       .container3 .card:hover{
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.015);
+        transform: translateY(-4px);
+       }
+
+    </style>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar">
+        <aside class="logo">
+            <img src="./FreshCart/1000114739-removebg-preview.png" alt="" height="110px" width="110px">
+        </aside>
+        <aside class="menu">
+            <ul>
+                <a href="./HomePage.html">Home</a>
+                <a href="">Contact Us</a>
+                <a href="">About Us</a>
+                <a href="./login.html">Login</a>
+                <a href="./SignUp.html">Register</a>
+            </ul>
+        </aside>
+    </nav>
+    <!--container1 -->
+    <section class="container1">
+        <aside class="tagline">FreshCart | Fresh Finds. Fast Delivery</aside>
+        <aside class="side">
+            <a href="./productpage.html">Products</a>
+            <a href="./cartpage.html">cart🛒</a>
+        </aside>
+    </section>
+    <section class="container2">
+        <h1>Welcome to FreshCart</h1>
+        <h3>"Fresh Finds. Fast Delivery"</h3>
+        <p>We Bring farm-fresh groceries straight to your doorstep. Enjoy the taste of nature with every order - fresh, healthy, and full of goodness.</p>
+        <a href="./productpage.html">Shop Now</a>
+    </section>
+    <section class="container3">
+        <a href="./productpage.html" class="card"><img src="./FreshCart/collection-vegetables.jpg" alt="" width="300px" height="200px">Vegetables</a>
+        <a href="./productpage.html" class="card"><img src="./FreshCart/360_F_53144147_Zx2dgnSeefxIjOQ5cjD4PBdZF4m8M7sm.jpg" alt="" width="300px" height="200px">Fruits</a>
+        <a href="./productpage.html" class="card"><img src="./FreshCart/assorted-fried-snacks-wooden-bowls-white-background-variety-crispy-salty-treats-junk-food-comfort-eating-323037173.jpg" alt="" width="300px" height="200px">Snacks</a>
+    </section>
+    <!-- footer -->
+    <footer>@CopyRights</footer>
+</body>
+</html>

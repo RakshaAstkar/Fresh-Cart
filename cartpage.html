@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 100%;
+            width: 100%;
+            background:#F9F9F9 ;
+            background-attachment: fixed;
+            position: relative;
+        }
+        .navbar{
+            height: 70px;
+            width: 100%;
+            background-color: #355E3B;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 250px;
+            position: sticky;
+        }
+        .menu ul{
+            display: flex;
+            align-items: center;
+            gap: 50px; 
+        }
+       .menu a{
+            text-decoration: none;
+            font-size: larger;
+            color: white;
+       }
+       .menu a:hover{
+            color:#FFD95A;
+       }
+       footer{
+            height: 70px;
+            width: 100%;
+            background-color: #355E3B;
+            color: white;
+            display: flex;
+            align-items: center;
+            position: absolute;
+            justify-content: center;
+            top: 100%;
+       }
+       article{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        
+       }
+       .cartMainContainer{
+        height: 300px;
+        width: 300px;
+        background: #F9F9F9;
+        color:#355E3B;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        box-shadow:  2px 2px 2px 2px rgba(39, 39, 39, 0.523);
+       }
+       button{
+        background-color: #355E38 ;
+            color: white;
+            padding: 7px;
+            border-radius: 35px;
+       }
+    </style>
+</head>
+<body>
+     <!-- navbar -->
+    <nav class="navbar">
+        <aside class="logo">
+            <img src="./FreshCart/1000114739-removebg-preview.png" alt="" height="110px" width="110px">
+        </aside>
+        <aside class="menu">
+            <ul>
+                <a href="./HomePage.html">Home</a>
+                <a href="./productpage.html">Products</a>
+                <a href="./cartpage.html">Cart🛒    <sup><span id="cartTotal">0</span></sup></a>
+            </ul>
+        </aside>
+    </nav>
+    <article>
+        <!-- main container -->
+        <section class="cartMainContainer">
+            <h2>Your shopping items</h2>
+            <aside id="cartItems"></aside>
+        </section>
+     <!-- cart total bill summary -->
+        <section class="cartSummary">
+            <h2 id="totalbill"></h2>
+            <button id="checkout">Checkout</button>
+            <button id="clearcart">Clear Cart</button>
+        </section>
+    </article>
+    <!-- footer -->
+    <footer>@CopyRights</footer>
+</body>
+<script src="./product.js"></script>
+</html>

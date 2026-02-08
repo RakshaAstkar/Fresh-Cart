@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body{
+            height: 100vh;
+            width: 100vw;
+            background:linear-gradient(pink,plum,skyblue) ;
+            background-attachment: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;    
+        }
+        fieldset{
+            border: 2px solid grey;
+            border-radius: 10%;
+        }
+        form{
+            background-color: rgb(251, 202, 251);
+            color: rgb(73, 73, 73);
+            border-radius:10%;
+            padding: 10px;
+        }
+        button {
+            background-color: rgba(244, 169, 248, 0.381);
+            color: gray ;
+            border: 2px solid gray;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 10px;
+            font-weight: bold;
+        }
+        button:hover{
+            transform: scale(1.1,1.1);  
+            transition: all ease 200ms;
+            border: 2px solid plum;
+            background-color: rgb(183, 148, 183);
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <form>
+            <label for="email">Email :</label>
+            <input type="email" id="email" placeholder="Enter Email">
+            <br><br>
+            <label for="password">Password :</label>
+            <input type="password" id="password" placeholder="Enter Password">
+            <br><br>
+            <button type="submit" value="Submit">Submit</button>
+            <button type="reset" value="Reset">Reset</button>
+    </form>
+</body>
+<script src="./login.js"></script>
+</html>
